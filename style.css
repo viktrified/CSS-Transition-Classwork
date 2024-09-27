@@ -1,0 +1,51 @@
+.first {
+    width: 10%;
+    background-color: red;
+    position: absolute;
+    top: 12px;
+    height: 50px;
+    transition: all 3s ease-in-out 4ms;
+}
+
+.first:hover {
+    width: 100%;
+    background-color: black;
+}
+
+
+.second {
+    margin: 250px;
+    background-color: red;
+    padding: 40px;
+    transition: all 3s ease 4ms;
+}
+
+.second:hover {
+    padding: 50px;
+    align-items: center;
+}
+
+.shock {
+    padding: 25px; 
+    background-color: red;
+    margin: 100px;
+    border: 2px solid black;
+}
+
+.shock:hover {    
+    transform-origin: 50% 10em;
+    animation: wiggle 0.05s linear infinite;
+}
+
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+}
+
